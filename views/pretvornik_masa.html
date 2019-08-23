@@ -1,0 +1,40 @@
+%import model
+
+<!DOCTYPE html>
+
+<html>
+    <body style="background-color: tomato">
+    <div align="center">
+
+        <h1>MASA</h1>
+        
+        Podprte enote:
+        <br>
+        <br>
+        <table style="width: 30%; background-color: white" border="2">
+            <tr>
+                <td style="text-align: center">g</td>
+                <td style="text-align: center">dag</td>
+                <td style="text-align: center">kg</td>
+                <td style="text-align: center">mg</td>
+                <td style="text-align: center">t</td>
+                <td style="text-align: center">lbs</td>
+            </tr>
+        </table>
+        <br>
+
+        <form method="post">
+            Količina: <input type="text" name="kolicina"> &ensp;
+            Iz enote: <input type="text" name="stara_enota"> &ensp;
+            V enoto: <input type="text" name="nova_enota">
+            <button type="submit">Pretvori</button>
+        </form>
+        
+        <h1>Rezultat: {{ rezultat }}</h1>
+        
+        <h2 style="color: white;">{{ napaka }}</h2>
+
+        <h2><a href="/">Pretvarjaj drugo količino</a></h2>
+    </div>
+    </body>
+</html>
